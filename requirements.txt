@@ -1,0 +1,15 @@
+anthropic==0.71.0
+matplotlib==3.10.7
+numpy==1.26.4
+openai==2.8.1
+openai-harmony==0.0.8
+pandas==2.2.2
+PyYAML>=6.0
+scikit-learn==1.7.2
+scipy==1.15.3
+seaborn==0.13.2
+torch==2.9.0
+torchaudio==2.9.0
+torchvision==0.24.0
+tqdm>=4.64.0
+transformers==4.57.1

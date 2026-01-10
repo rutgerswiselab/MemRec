@@ -1,0 +1,13 @@
+# Common configuration for all models
+
+seed: 42
+implicit: true
+metrics: ['Hit', 'NDCG']
+topk: [1, 3, 5, 10]
+n_eval_candidates: 100  # Total candidates during evaluation (1 positive + 99 negatives)
+valid_metric: 'NDCG@10'
+patience: 10
+train_batch_size: 4096
+eval_batch_size: 4096
+num_workers: 4  # Number of workers for data loading (0 for debugging, 4+ for training)
+
