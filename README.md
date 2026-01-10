@@ -6,46 +6,13 @@ MemRec is a memory-augmented intelligent recommender system that achieves effici
 
 ```
 memrec/
-├── configs/                  # Configuration files
-│   ├── common.yaml          # Common config
-│   ├── memrec_*.yaml        # MemRec dataset-specific configs (full evaluation)
-│   └── memrec_*_1k.yaml     # MemRec configs for 1k sampled users (reproducibility)
-├── data/                     # Data directory
-│   ├── raw/                 # Raw data
-│   └── processed/           # Processed data
-├── env/                      # Environment config
-│   └── environment.yml      # Conda environment config
-├── scripts/                  # Core scripts
-│   ├── run_train.py         # Main training/evaluation script
-│   ├── setup_env.sh         # Environment setup script
-│   ├── generate_eval_user_sample.py       # Generate evaluation samples
-│   └── update_config_with_user_list.py    # Config update utility
-├── src/                      # Source code
-│   ├── data/                # Data loading module
-│   │   ├── dataset_base.py  # Dataset base class
-│   │   └── samplers.py      # Samplers
-│   ├── memory/              # Memory mechanism core module
-│   │   ├── manager.py       # Memory manager
-│   │   ├── storage.py       # Memory storage
-│   │   ├── pruner.py        # Memory pruning
-│   │   ├── pruner_llm_rules.py  # LLM rule-based pruning
-│   │   ├── packer.py        # Context packing
-│   │   ├── encoder.py       # Memory encoder
-│   │   ├── graph.py         # Collaboration graph
-│   │   └── domain_rules/    # Domain-specific rules
-│   ├── models/              # Model implementations
-│   │   ├── memrec_agent.py  # MemRec main model
-│   │   ├── llm_client.py    # LLM client
-│   │   ├── reranker_llm.py  # LLM reranker
-│   │   └── reranker_vector.py  # Vector reranker
-│   ├── train/               # Trainers
-│   │   ├── trainer_memrec.py  # MemRec trainer
-│   │   └── metrics.py         # Evaluation metrics
-│   └── utils.py             # Utility functions
-├── .gitignore               # Git ignore file
-├── LICENSE                  # MIT License
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+├── configs/             # Experiment configurations
+├── scripts/             # Run scripts (train, eval, data processing)
+└── src/
+    ├── memory/          # Memory mechanisms (Storage, Pruner, Graph)
+    ├── models/          # MemRec Agent & LLM Clients
+    ├── train/           # Trainer & Metrics
+    └── data/            # Dataset loaders & Samplers
 ```
 
 ## 🚀 Quick Start
