@@ -161,8 +161,6 @@ class MemRecTrainer:
             mix_min_users=self.mix_min_users,
             mix_min_items=self.mix_min_items,
             fanout_cap=self.fanout_cap,
-            decay=self.decay,
-            apply_conf_min=self.apply_conf_min,
             reranker_mode=self.reranker_mode,
             pruner_mode=self.pruner_mode,
             pruner_checkpoint=self.pruner_checkpoint,

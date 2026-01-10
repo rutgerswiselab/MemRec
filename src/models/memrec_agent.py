@@ -43,8 +43,6 @@ class MemRecAgent:
         mix_min_users: int = 4,
         mix_min_items: int = 6,
         fanout_cap: int = 6,
-        decay: float = 0.6,
-        apply_conf_min: float = 0.7,
         reranker_mode: str = "vector",  # "vector" or "llm"
         pruner_mode: str = "llm_rules",  # "hybrid_rule", "learned_mlp", or "llm_rules"
         pruner_checkpoint: Optional[str] = None,
@@ -66,8 +64,6 @@ class MemRecAgent:
             mix_min_users: Minimum user neighbors
             mix_min_items: Minimum item neighbors
             fanout_cap: Stage-W propagation fanout cap
-            decay: Stage-W propagation decay
-            apply_conf_min: Minimum confidence for applying patches
             reranker_mode: Reranker mode ("vector" or "llm")
             pruner_mode: Pruner mode ("hybrid_rule", "learned_mlp", or "llm_rules")
             pruner_checkpoint: Pruner MLP checkpoint path (for learned_mlp)
@@ -83,8 +79,6 @@ class MemRecAgent:
         self.mix_min_users = mix_min_users
         self.mix_min_items = mix_min_items
         self.fanout_cap = fanout_cap
-        self.decay = decay
-        self.apply_conf_min = apply_conf_min
         self.reranker_mode = reranker_mode
         self.pruner_mode = pruner_mode
         self.enable_stage_r = enable_stage_r  # Ablation control
