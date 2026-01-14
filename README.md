@@ -44,6 +44,8 @@ export AZURE_OPENAI_ENDPOINT="https://your-endpoint.openai.azure.com/"
 export AZURE_OPENAI_API_KEY="your-api-key"
 ```
 
+If your LLM service is API only, such as ChatGPT or Gemini, simply remove the ENDPOINT and directly use your API key, and modify the LLM calling interface function to be consistent with your LLM service.
+
 ### 3. Download Datasets
 
 Download the InstructRec datasets published by [iAgent](https://github.com/agiresearch/iAgent):
