@@ -2,6 +2,18 @@
 
 MemRec is a memory-augmented intelligent recommender system that achieves efficient personalized recommendations through collaborative memory mechanisms and large language models.
 
+If you find our work helpful, please consider citing our paper:
+
+```bibtex
+@article{chen2026memrec,
+  title   = {MemRec: Collaborative Memory-Augmented Agentic Recommender System},
+  author  = {Chen, Weixin and Zhao, Yuhan and Huang, Jingyuan and Ye, Zihe and Ju, Clark Mingxuan and Zhao, Tong and Shah, Neil and Chen, Li and Zhang, Yongfeng},
+  year    = 2026,
+  journal = {arXiv preprint arXiv:2601.08816},
+  url     = {https://arxiv.org/abs/2601.08816}
+}
+```
+
 ## 📁 Project Structure
 
 ```
