@@ -257,8 +257,8 @@ python scripts/run_train.py \
   --seed 42
 
 # For 1k sampled users evaluation (for reproducibility)
-# Note: The config file already specifies eval_user_list: eval_user_sample_1k_instructrec-books.json
-# Make sure the JSON file is in the project root directory
+# Note: The config file already specifies eval_user_list: data/eval_user_samples/eval_user_sample_1k_instructrec-books.json
+# Make sure the JSON file is in data/eval_user/ directory
 python scripts/run_train.py \
   --model memrec_agent \
   --dataset instructrec-books \
@@ -266,7 +266,7 @@ python scripts/run_train.py \
   --seed 42
 ```
 
-**Note for 1k evaluation:** The `memrec_instructrec-books_1k.yaml` config file already includes `eval_user_list: eval_user_sample_1k_instructrec-books.json`. Ensure this JSON file is placed in the project root directory (same level as `scripts/` and `configs/`).
+**Note for 1k evaluation:** The `memrec_instructrec-books_1k.yaml` config file already includes `eval_user_list: data/eval_user_samples/eval_user_sample_1k_instructrec-books.json`. Ensure these JSON files are placed in `data/eval_user/` directory.
 
 ### Q4: Custom Dataset
 
